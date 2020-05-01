@@ -86,7 +86,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Pizza verwijderen (delete)
 - Extra opdracht
     - Juiste statuscodes teruggeven.
-    - Controles op input toevoegen
+    - Controles op input toevoegen.
+    - Nieuwe module aanmaken met Nagerechten, pasta's, drinken, antipasti of iets dergelijks
 
 2 Authguard toevoegen om endpoints te beschermen
 - Controleren op specifieke header
