@@ -80,7 +80,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 1 REST-endpoints toevoegen
 - Alle pizza's
 - 1 pizza (Get /pizza/{id}) 
-- Ingrediënten van 1 pizza (Get /pizza/{id}/ingredienten)
+- Ingrediënten van 1 pizza beschikbaar op eigen sub-endpoint (Get /pizza/{id}/ingredienten)
 - Nieuwe pizza toevoegen (Post)
 - Pizza bijwerken (Put)
 - Pizza verwijderen (delete)
