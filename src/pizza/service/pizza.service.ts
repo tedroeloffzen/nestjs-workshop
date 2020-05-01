@@ -25,7 +25,7 @@ export class PizzaService {
 
   }
 
-  public deletePizza(): Pizza {
+  public deletePizza(): void {
 
   }
 }

@@ -1,8 +1,7 @@
 import { Module } from '@nestjs/common';
+import { PizzaModule } from './pizza/pizza.module';
 
 @Module({
-  imports: [],
-  controllers: [],
-  providers: [],
+  imports: [PizzaModule]
 })
 export class AppModule {}
