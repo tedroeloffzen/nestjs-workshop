@@ -73,3 +73,35 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
+  
+  
+## Workshop opdrachten
+
+1 REST-endpoints toevoegen
+- Alle pizza's
+- 1 pizza (Get /pizza/{id}) 
+- Ingrediënten van 1 pizza (Get /pizza/{id}/ingredienten)
+- Nieuwe pizza toevoegen (Post)
+- Pizza bijwerken (Put)
+- Pizza verwijderen (delete)
+- Extra opdracht
+    - Juiste statuscodes teruggeven.
+    - Controles op input toevoegen
+
+2 Authguard toevoegen om endpoints te beschermen
+- Controleren op specifieke header
+
+3 GraphQL toevoegen
+- GraphQL toevoegen aan pizza-module
+- Schema definieren
+    - Types
+    - Query
+- Resolver maken
+- AuthGuard toevoegen
+- Filters toevoegen
+    - Prijs
+    - Ingrediënt 
+- Nested resolver
+    - Alleen ingredienten met even id's
+
+ 
