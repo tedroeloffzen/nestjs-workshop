@@ -28,8 +28,7 @@ export class PizzaController {
 
   // Assignment 2: Create an endpoint that returns a single pizza, with a specific ID, using a Get-request
   @Get(':id')
-  @UsePipes(new ParseIntPipe())
-  getSinglePizza(@Param('id') id: number): Pizza {
+  getSinglePizza(@Param('id', new ParseIntPipe()) id: number): Pizza {
     return this.pizzaService.getSinglePizza(id);
   }
 
@@ -44,14 +43,13 @@ export class PizzaController {
 
   // Assignment 1: Create an endpoint that updates a pizza, with a specific ID, using a Put-request
   @Put(':id')
-  updatePizza(@Param('id') id: string, @Body() pizza: Pizza): Pizza {
-    return this.pizzaService.updatePizza(Number.parseInt(id, 10), pizza);
+  updatePizza(@Param('id', new ParseIntPipe()) id: number, @Body() pizza: Pizza): Pizza {
+    return this.pizzaService.updatePizza(id, pizza);
   }
 
   // Assignment 5: Create an endpoint that deletes a pizza, with a specific ID, using a Delete-request
   @Delete(':id')
-  @UsePipes(new ParseIntPipe())
-  deletePizza(@Param('id') id: number): void {
+  deletePizza(@Param('id', new ParseIntPipe()) id: number): void {
     this.pizzaService.deletePizza(id);
     return;
   }
