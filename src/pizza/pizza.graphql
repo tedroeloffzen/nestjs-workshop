@@ -1,0 +1,35 @@
+type Ingredient {
+    id: Int!
+    name: String!
+}
+
+type Pizza {
+    id: Int!
+    name: String!
+    description: String!
+    price: Float!
+    ingredients: [Ingredient]!
+}
+
+input PizzaInput {
+    name: String!
+    description: String!
+    price: Float!
+    ingredients: [IngredientInput]!
+}
+
+input IngredientInput {
+    id: Int!
+    name: String!
+}
+
+type Query {
+    pizzas: [Pizza]!
+    pizza(id: Int): Pizza
+}
+
+type Mutation {
+    pizzaCreate(pizza: PizzaInput): Pizza
+    pizzaUpdate(id: Int, pizza: PizzaInput): Pizza
+    pizzaDelete(id: Int): Boolean
+}
